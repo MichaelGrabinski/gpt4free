@@ -1,7 +1,8 @@
 {
   "functions": {
     "api/**/*.py": {
-      "maxDuration": 15,          
+      "runtime": "vercel-python@3.12",
+      "maxDuration": 15,
       "memory": 1024
     }
   },
