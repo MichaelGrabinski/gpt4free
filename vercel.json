@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/**/*.py": {
+      "maxDuration": 15,          
+      "memory": 1024
+    }
+  },
+  "routes": [
+    { "src": "/v1/(.*)", "dest": "api/chat.py" },
+    { "src": "/(.*)",    "dest": "static/index.html" }
+  ]
+}
